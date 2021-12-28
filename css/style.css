@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2? family= Noto+Sans+KR:wght@100 & display=swap');
+
+*{margin:0; padding:0;}
+
+body{
+  font-family:'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: black;
+  position: relative;
+}
+li{list-style: none;}
+a{text-decoration: none; color: black;}
+
+/*헤더*/
+#fixed{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+}
+.logo img{
+  width: 200px;
+}
+#header{
+  box-shadow: 5px 5px 10px rgba(71, 71, 71, 0.1);
+}
+#header_inner{
+  width: 1300px;
+  margin: auto;
+  height: 80px;
+}
+.nav >li{
+  float: left;
+  position: relative;
+}
+.nav> li >a{
+  margin-top: 15px;
+  font-size: 16px;
+  display: block;
+  padding: 10px 30px 10px 30px;
+}
+.nav> li:nth-child(1){
+  clear: both;
+  margin-top: -15px;
+  padding-top: 7px;
+}
+
+.sub{
+  width: 100%;
+  display: none;
+  background-color: white;
+  position: absolute;
+}
+.sub_inner{
+  width: 800px;
+  margin: auto;
+}
+.sub li{
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+
+.sub li a:hover{
+  color: #233c98;
+  font-weight: bold;
+}
+
+.nav li:hover .sub{
+  display: block;
+}
+
+.icons{
+  float: right;
+}
+
+.icons li{
+  margin-top: 22px;
+  float: left;
+  margin-left: 20px;
+}
+
+.icons li input{
+  border: #ccc 1px solid;
+  padding: 5px;
+  border-radius: 50px;
+  display: none;
+  vertical-align: top;
+}
+.icons li input:hover{
+  background-color: #ccc;
+  border-radius: 50px;
+  border: none;
+}
+
+.icons li a{
+  padding: 22px 0;
+}
+
+
+
+/*배너*/
+#banner{
+  height: 500px;
+  margin-top: 80px;
+  position: relative;
+}
+#banner img{
+  width: 100%;
+}
+.tab1{
+  font-size: 20px;
+  position: absolute;
+  top: 436px;
+  left: 360px;
+}
+.tab1 a{
+  display: block;
+  color: white;
+  background-color: #233c98;
+  padding: 15px 40px;
+  border-radius: 15px 15px 0 0;
+}
+.tab1 a:hover{
+  background-color: white;
+  color: #233c98;
+}
+.tab2{
+  font-size: 20px;
+  position: absolute;
+  top: 436px;
+  left:593px;
+}
+.tab2 a{
+  background-color: white;
+  display: block;
+  border-radius: 15px 15px 0 0;
+  padding: 15px 43px;
+  color: #233c98;
+}
+.tab2 a:hover{
+  color: white;
+  background-color: #233c98;
+}
+
+/*도서설명*/
+#book{
+  width: 1300px;
+  height: 520px;
+  margin: 30px auto;
+}
+.book{
+  position: relative;
+  margin: auto;
+  perspective: 800px;
+  width: 320px;
+  height: 496px;
+}
+.back{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  opacity: 0;
+}
+.book:hover img{
+  transform: rotateY(180deg);
+  opacity: 1;
+}
+.book img{
+  transition: all 1s;
+}
+
+.left{
+  float: left;
+  height: 500px;
+  width: 550px;
+  text-align: center;
+}
+.right{
+  float: left;
+  height: 500px;
+  width: 650px;
+}
+.right h2{
+  color: #233c98;
+  margin: 20px 0;
+}
+.right h1{
+  margin-bottom: 10px;
+}
+.right p{
+  padding: 20px 0;
+}
+.border_bottom{
+  border-bottom: 1px solid #ccc;
+}
+.tags li{
+  float: left;
+}
+.tags li a{
+  display: block;
+  padding: 3px 18px;
+  margin: 0 8px;
+  color: rgb(128, 125, 125);
+  border: 1px #ccc solid;
+  border-radius: 50px;
+}
+.tags li a:hover{
+  background-color: rgb(128, 125, 125);
+  color: white;
+}
+
+.buttons li{
+  margin-top: 10px;
+  width: 47%;
+  float: left;
+  border-radius: 5px;
+}
+.buttons li a{
+  display: block;
+  padding: 15px 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+.subtitle{
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100px;
+}
+.blue{
+  margin-left: 10px;
+  color: #233c98;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.blackbutton{
+  border: 1px solid black;
+}
+.bluebutton{
+  margin-left: 30px;
+  border: none;
+  background-color: #233c98;
+}
+.blackbutton a:hover{
+  background-color: #233c98;
+  color: white;
+  border:none;
+}
+.bluebutton a{
+  color: white;
+}
+.bluebutton a:hover{
+  background-color: white;
+  color: #233c98;
+  border: 1px solid #233c98;
+  border-radius: 5px;
+}
+.list li{
+  float: left;
+  height: 30px;
+  margin: 20px 0;
+}
+
+/*완독일정*/
+#schedule{
+  width: 1300px;
+  height: 1000px;
+  margin: auto;
+  position: relative;
+}
+#schedule h3{
+  font-size: 30px;
+  font-weight: 100;
+  padding: 30px 0;
+}
+.tabs{
+  font-size: 16px;
+  height: 30px;
+  width: 1300px;
+  border-bottom: 3px solid rgb(240, 238, 238);
+}
+.tabs a{
+  display: block;
+  padding-right: 60px;
+}
+.tabs ul{
+  float: left;
+}
+
+.underline{
+  width: 50%;
+  height: 5px;
+  background-color: black;
+  margin-top: 4px;
+}
+
+
+
+
+.calendar{
+  width: 1300px;
+  text-align:right;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+.pop{
+  position: absolute;
+  top: 460px;
+  left: 10px;
+  z-index: 999;
+}
+.pop:hover{
+  opacity: 0.1;
+  transition: all 1s;
+}
+.calendar td{
+  border: 1px solid #ccc;
+  height: 140px;
+  width: 200px;
+  vertical-align: top;
+  position: relative;
+}
+.calendar span{
+  position: absolute;
+  left: 10px;
+  top:10px;
+}
+.calendar th{
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.last_month{
+  color: #ccc;
+}
+.today{
+  background-color: rgb(255, 254, 201);
+}
+.start{
+  background-color: rgb(247, 74, 89);
+  color: white;
+  text-align: left;
+  padding-left:10px;
+  border-radius: 5px;
+}
+.deliver{
+  background-color: #3d61e2;
+  color: white;
+  text-align: left;
+  padding-left:10px;
+  border-radius: 5px;
+}
+.online{
+  background-color: #3de29d;
+  color: white;
+  text-align: left;
+  padding-left:10px;
+  border-radius: 5px;
+}
+.offline{
+  background-color: #4b83ec;
+  color: white;
+  text-align: left;
+  padding-left:10px;
+  border-radius: 5px;
+}
+.notice{
+  line-height: 30px;
+  padding: 20px 0;
+  margin: 20px 0;
+  text-align: center;
+  font-size: 18px;
+  background-color: rgb(205, 224, 252);
+}
+/*장소안내*/
+#place{
+  margin: auto;
+  width: 1300px;
+  height: 800px;
+}
+#place h5{
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+.tab{
+  margin-top: 20px;
+  height:600px;
+  background-color: rgb(205, 224, 252);
+}
+
+.tab li{
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 20%;
+  text-align: center;
+  float: left;
+}
+.tab li a{
+  display: block;
+  padding: 20px 10px;
+}
+.tab li a:hover,
+.tab li a.active{background:#233c98; color:white;}
+
+
+.infos{
+  width: 1300px;
+}
+.infos li{
+  border:none;
+  float: left;
+  width: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 40px 70px;
+  box-sizing: border-box;
+}
+.infos li:nth-child(1){
+  background: url(../images/address.png) no-repeat 0% 50%;
+}
+.infos li:nth-child(2){
+  background: url(../images/call.png) no-repeat 0% 50%;
+}
+
+/*푸터*/
+#footer{
+  background-color: #233c98;
+  color: white;
+  height: 320px;
+}
+#footer_inner{
+  width: 1300px;
+  margin: auto;
+  position: relative;
+}
+#footer_inner>div{
+  height: 60px;
+  padding-top: 45px;
+}
+.sns_list{
+  float: right;
+}
+.sns_list li{
+  float: left;
+}
+.sns_list li a{
+  margin-left: 10px;
+}
+.sns_list li a:hover{
+  opacity: 0.5;
+}
+.footer_nav{
+  float: left;
+}
+.footer_nav li{
+  float: left;
+}
+.footer_nav li a{
+  color: white;
+  display: block;
+  padding-right: 20px;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.footer_nav li:nth-child(1){
+  margin-top: -5px;
+}
+.footer_nav li:nth-child(2){
+  margin-left: -5px;
+}
+.footer_nav li a:hover{
+  text-decoration: underline;
+}
+.info{
+  float: left;
+}
+.center{
+  float: right;
+  text-align: right;
+}
+.footer_sub{
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  padding-top: 20px;
+}
+.up{
+  position: absolute;
+  right: -120px;
+  top: 80px;
+}
+.up:hover{
+  opacity: 0.8;
+  transform: translateY(-20px);
+  transition: 1s all;
+}
+
+
+/*nav css*/
+/*  하이퍼링크 설정  */
+
+.nav>li>a{display:block;}
+.nav>li>a:hover{color:#233c98;font-weight: bold;}
+.solid{
+  width:100%;
+  margin:auto;
+  margin-top:0px;
+  height:3px;
+  background:#233c98;
+  visibility:hidden;
+  opacity:0;
+  transform:scaleX(0);
+  transition-property:opacity, transform;
+  transition-duration:0.5s;
+}
+.nav>li>a:hover .solid{
+  transform:scaleX(1);	
+  opacity:1;
+  visibility:visible;
+}
+		
